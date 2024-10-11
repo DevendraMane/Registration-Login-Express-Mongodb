@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <a href="/employeeData" class="members-btn">Members</a>
+    </div>
+    <div class="container">
+        <div class="form-section">
+            <h2>Hello, friend!</h2>
+            <form action="/user" method="POST">
+                
+                <div class="form-row">
+                    <input type="email" placeholder="Your Email *" name="email">
+                    
+                </div>
+                
+                <div class="form-row">
+                    <input type="password" placeholder="Password *" name="password">
+                    
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" required> 
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+                <button type="submit" class="register-btn login-btn">Login</button>
+            </form>
+            
+        </div>
+        <div class="info-section">
+            
+                <img src="register.gif" alt="Boy Working">
+
+            
+            <h2>Glad to see you!</h2>
+            
+        </div>
+    </div>
+</body>
+</html>

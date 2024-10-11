@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <a href="/employeeData" class="members-btn">Members</a>
+    </div>
+    <div class="container">
+        <div class="form-section">
+            <h2>Hello, friend!</h2>
+            <form action="/register" method="POST">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name *" name="firstName">
+                    <input type="text" placeholder="Last Name *" name="lastName">
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Your Email *" name="email">
+                    <div class="gender">
+                        <input type="radio" name="gender" value="Male" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="Female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Your Phone *" name="phone">
+                    <input type="number" placeholder="Enter Your Age *" name="age">
+                </div>
+                <div class="form-row">
+                    <input type="password" placeholder="Password *" name="password">
+                    <input type="password" placeholder="Confirm Password *" name="confirmPassword">
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" required> 
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+                <button type="submit" class="register-btn">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="/login">Sign in</a></p>
+        </div>
+        <div class="info-section">
+            <img src="register.gif" alt="Boy Working">
+            <h2>Glad to see you!</h2>
+           
+        </div>
+    </div>
+</body>
+</html>

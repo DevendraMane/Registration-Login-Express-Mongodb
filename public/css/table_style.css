@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #c6f6f9, #b0e0f9);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    overflow-y: scroll;
+    height: 80%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 3px rgba(0, 255, 255, 0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #00c4cc;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+tbody td {
+    font-size: 15px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Top Bar for Members Button */
+.top-bar {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+}
+
+.members-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.members-btn:hover {
+    background: linear-gradient(135deg, #5a00b5, #2062e5);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+img{
+    width: 62px;
+    height: 40px;
+}
+img:hover{
+   cursor: pointer;
+}
+/* .delete_png{
+    
+} */
