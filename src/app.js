@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true })); // For parsing form data
 
 // Set view engine
 app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "../views"));
 
 app.get("/", (req, res) => {
   res.render("index");
