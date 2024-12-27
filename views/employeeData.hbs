@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", async function() {
             // Add click event listener to all delete buttons (images)
             document.querySelectorAll(".delete_png").forEach(button => {
                 button.addEventListener("click", async function() {
-                    const employeeId = this.getAttribute("data-id");
+                    const employeeId = this.getAttribute("data-id");  //if not understanding search 'employee._id' see this attribute in the delete.png attribute
+                    console.log(employeeId);
                     try {
                         const deleteResponse = await fetch(`/api/deleteEmployee/${employeeId}`, {
                             method: "DELETE"
