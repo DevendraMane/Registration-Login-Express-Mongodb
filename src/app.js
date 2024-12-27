@@ -4,7 +4,7 @@ const Employee = require("./models/register");
 require("./db/conn");
 const app = express();
 const hbs = require("hbs");
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 2100;
 
 // Middleware
 app.use(express.static(path.join(__dirname, "../public")));
