@@ -8,3 +8,7 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+// !try stopping the DB service through Terminal
+// net stop MongoDB
+// net start MongoDB
